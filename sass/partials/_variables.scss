@@ -9,9 +9,17 @@ $sprite-image: "../images/global-sprite";
 $max-width: 1200px;
 $grid-colums: 12;
 $max-content: 960px;
+$mobile-width: 640px;
 
 // Typography
-$typo-content: 'Lato', sans-serif;
+// import fonts
+@import url(https://fonts.googleapis.com/css?family=Muli|Cookie|Didact+Gothic);
+
+//fonts variables
+$muli: 'Muli', sans-serif;
+$cookie: 'Cookie', cursive;
+$didact: 'Didact Gothic', sans-serif;
+
 
 // Colors
 $primary-color: #2a2a2a;

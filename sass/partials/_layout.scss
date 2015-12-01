@@ -11,7 +11,7 @@ body {
   @include span-columns(12);
 }
 
-.navbar-first {
+.container {
   @include span-columns(12);
 }
 
@@ -21,6 +21,7 @@ body {
 
 .product-main-image {
   @include span-columns(12);
+  background-color: $second-color;
 }
 
 .about-main-product {
@@ -42,7 +43,9 @@ body {
 }
 
 .product-images-item {
-  display: none;
+  //display: none;
+  width: 400px;
+  height: 600px;
 }
 
 .product-description,
@@ -73,4 +76,8 @@ body {
 .fa-star {
   color: #2a9d8a;
   font-size: 1.5rem;
+}
+
+.product-info-item-precio{
+
 }

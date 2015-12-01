@@ -19,8 +19,8 @@
 }
 
 //bourbon
-@mixin outer-container($max-width: $max-content) {
-  max-width: $max-content;
+@mixin outer-container($max-width: $max-width) {
+  max-width: $max-width;
   margin: {
     left: auto;
     right: auto;

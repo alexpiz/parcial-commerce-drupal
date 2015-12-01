@@ -4,49 +4,55 @@
   padding-top: 24%;
 }
 
-.fa-shopping-cart {
-  color: white;
-  margin-right: 5%;
-}
-
 .navbar-first {
   background-color: #2a9d8a;
-  padding: 5%;
   position: fixed;
+  width: 100%;
+  top: 0;
   a {
     color: white;
     text-decoration: none;
     @include font-size(24);
+    @media (min-width: $mobile-width){
+      display: none;
+    }
   }
   h1 {
     display: inline-block;
-    width: 70%;
+    width: 30%;
   }
   input {
     display: none;
   }
 }
 
-//mmain nagigation
 .main-nav {
-  background-color: #2a2a2a;
+@media (max-width: $mobile-width){
   display: none;
+}
+
+  background-color: #2a2a2a;
   height: auto;
-  padding: 10% 0;
+  position: fixed;
+  width: 100%;
+  top: 110px;
   li {
     color: white;
     margin: 6% 0;
-    @include font-size(15);
+    @include font-size(20);
   }
+@media (min-width: $mobile-width){
+  position: absolute;
+  width:100%;
+  li{
+    display: inline-block;
+  }
+}
 }
 
 
 button {
-  @include font-size(18);
-  border-radius: 30px;
-  margin: 5% 0;
+  @include font-size(20);
+  margin: 3% 0;
   margin-top: -2px;
-  .fa {
-    margin-left: 4%;
-  }
 }

@@ -8,7 +8,7 @@ html {
 
 body {
   color: #2a2a2a;
-  font-family: sans-serif;
+  font-family: $muli;
   margin: 0;
 }
 
@@ -19,7 +19,7 @@ img {
 }
 
 p, li {
-  @include font-size(14);
+  @include font-size(20);
   color: #555;
   line-height: 1.6;
 }
@@ -53,7 +53,7 @@ h1, h2, h3, h4, h5, h6 {
 table {
   width: 100%;
   border-collapse: collapse;
-  @include font-size(14);
+  @include font-size(20);
 }
 
 th, td {
@@ -72,7 +72,7 @@ th, td {
   }
   a {
     color: #333;
-    @include font-size(14);
+    @include font-size(20);
     padding-right: 20px;
     &.active {
       color: #000;

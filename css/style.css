@@ -1,4 +1,5 @@
 /***** Neat grid system*****/
+@import url(https://fonts.googleapis.com/css?family=Muli|Cookie|Didact+Gothic);
 /* media query points*/
 /*
  * Rules for base elements
@@ -8,7 +9,7 @@ html {
 
 body {
   color: #2a2a2a;
-  font-family: sans-serif;
+  font-family: "Muli", sans-serif;
   margin: 0; }
 
 img {
@@ -17,8 +18,8 @@ img {
   height: auto; }
 
 p, li {
-  font-size: 14px;
-  font-size: 1.4rem;
+  font-size: 20px;
+  font-size: 2rem;
   color: #555;
   line-height: 1.6; }
 
@@ -43,8 +44,8 @@ h1, h2, h3, h4, h5, h6 {
 table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 14px;
-  font-size: 1.4rem; }
+  font-size: 20px;
+  font-size: 2rem; }
 
 th, td {
   padding: 0.5em; }
@@ -59,8 +60,8 @@ th, td {
     float: left; }
   .tabs a {
     color: #333;
-    font-size: 14px;
-    font-size: 1.4rem;
+    font-size: 20px;
+    font-size: 2rem;
     padding-right: 20px; }
     .tabs a.active {
       color: #000;
@@ -70,7 +71,7 @@ th, td {
       text-decoration: none; }
 
 body {
-  max-width: 960px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto; }
 
@@ -79,7 +80,7 @@ body {
   margin-left: auto;
   margin-right: auto; }
 
-.navbar-first {
+.container {
   max-width: 960px;
   margin-left: auto;
   margin-right: auto; }
@@ -92,7 +93,8 @@ body {
 .product-main-image {
   max-width: 960px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  background-color: lightblue; }
 
 .about-main-product {
   max-width: 960px;
@@ -117,7 +119,8 @@ body {
   margin-right: auto; }
 
 .product-images-item {
-  display: none; }
+  width: 400px;
+  height: 600px; }
 
 .product-description,
 .about-main-product {
@@ -146,44 +149,51 @@ body {
 .product-main-image {
   padding-top: 24%; }
 
-.fa-shopping-cart {
-  color: white;
-  margin-right: 5%; }
-
 .navbar-first {
   background-color: #2a9d8a;
-  padding: 5%;
-  position: fixed; }
+  position: fixed;
+  width: 100%;
+  top: 0; }
   .navbar-first a {
     color: white;
     text-decoration: none;
     font-size: 24px;
     font-size: 2.4rem; }
+    @media (min-width: 640px) {
+      .navbar-first a {
+        display: none; } }
   .navbar-first h1 {
     display: inline-block;
-    width: 70%; }
+    width: 30%; }
   .navbar-first input {
     display: none; }
 
 .main-nav {
   background-color: #2a2a2a;
-  display: none;
   height: auto;
-  padding: 10% 0; }
+  position: fixed;
+  width: 100%;
+  top: 110px; }
+  @media (max-width: 640px) {
+    .main-nav {
+      display: none; } }
   .main-nav li {
     color: white;
     margin: 6% 0;
-    font-size: 15px;
-    font-size: 1.5rem; }
+    font-size: 20px;
+    font-size: 2rem; }
+  @media (min-width: 640px) {
+    .main-nav {
+      position: absolute;
+      width: 100%; }
+      .main-nav li {
+        display: inline-block; } }
 
 button {
-  font-size: 18px;
-  font-size: 1.8rem;
-  border-radius: 30px;
-  margin: 5% 0;
+  font-size: 20px;
+  font-size: 2rem;
+  margin: 3% 0;
   margin-top: -2px; }
-  button .fa {
-    margin-left: 4%; }
 
 /*
  * Price style .
