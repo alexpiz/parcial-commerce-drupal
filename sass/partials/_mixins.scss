@@ -1,0 +1,35 @@
+//
+// Mixins
+//
+
+// font-size mixin
+@mixin font-size($size) {
+  font-size: $size + px;
+  font-size: ($size / 10) + rem;
+}
+
+// sprite mixin
+// usage example:
+// @include sprite(red, $x: center, $y: -589px);
+@mixin sprite($color, $x, $y, $image: "$sprite-image") {
+  background: $color url($image + ".png");
+  background-image: url($image + ".svg"), none;
+  background-position: $x $y;
+  background-repeat: no-repeat;
+}
+
+//bourbon
+@mixin outer-container($max-width: $max-content) {
+  max-width: $max-content;
+  margin: {
+    left: auto;
+    right: auto;
+  }
+}
+@mixin span-columns($max-width: $max-content){
+  max-width: $max-content;
+  margin: {
+    left: auto;
+    right: auto;
+  }
+}

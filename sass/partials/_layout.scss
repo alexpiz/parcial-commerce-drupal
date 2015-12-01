@@ -1,0 +1,76 @@
+//
+// General layout rules
+//
+
+
+body {
+  @include outer-container;
+}
+
+.header-products {
+  @include span-columns(12);
+}
+
+.navbar-first {
+  @include span-columns(12);
+}
+
+.main-nav {
+  @include span-columns(12);
+}
+
+.product-main-image {
+  @include span-columns(12);
+}
+
+.about-main-product {
+  @include span-columns(12);
+}
+
+.product-comment-review {
+  @include span-columns(12);
+}
+
+.related-products {
+  @include span-columns(12);
+  margin: 4% 0;
+  text-align:center;
+}
+
+.related-products-camisa {
+  @include span-columns(6);
+}
+
+.product-images-item {
+  display: none;
+}
+
+.product-description,
+.about-main-product {
+  padding: 0 4%;
+}
+
+.product-info {
+  margin: 0;
+  padding: 0;
+}
+
+.about-main-product {
+  margin-top: 10%;
+}
+
+.product-comment-review-user {
+  background: #2a2a2a;
+  margin: 3% 0;
+  padding: 4%;
+  h3 {
+    display: inline-block;
+    width: 40%;
+    word-spacing: 5px;
+  }
+}
+
+.fa-star {
+  color: #2a9d8a;
+  font-size: 1.5rem;
+}

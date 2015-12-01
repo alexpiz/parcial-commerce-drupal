@@ -1,0 +1,25 @@
+//
+// Variables
+//
+
+// Sprite
+$sprite-image: "../images/global-sprite";
+
+/***** Neat grid system*****/
+$max-width: 1200px;
+$grid-colums: 12;
+$max-content: 960px;
+
+// Typography
+$typo-content: 'Lato', sans-serif;
+
+// Colors
+$primary-color: #2a2a2a;
+$second-color: lightblue;
+$light-gray: gray;
+$yellow-raiting: yellow;
+
+/* media query points*/
+$desktop: 1024px;
+$tablet: 640px;
+$mobile: 420px;
