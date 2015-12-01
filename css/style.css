@@ -149,24 +149,27 @@ body {
 .product-main-image {
   padding-top: 24%; }
 
-.navbar-first {
+@media (min-width: 640px) {
+  .toggle-menu {
+    display: none; } }
+
+.toggle-menu .navbar-first {
   background-color: #2a9d8a;
   position: fixed;
   width: 100%;
   top: 0; }
-  .navbar-first a {
+  .toggle-menu .navbar-first a {
     color: white;
     text-decoration: none;
     font-size: 24px;
     font-size: 2.4rem; }
-    @media (min-width: 640px) {
-      .navbar-first a {
-        display: none; } }
-  .navbar-first h1 {
-    display: inline-block;
-    width: 30%; }
-  .navbar-first input {
-    display: none; }
+
+.toggle-menu h1 {
+  display: inline-block;
+  width: 30%; }
+
+.toggle-menu input {
+  display: none; }
 
 .main-nav {
   background-color: #2a2a2a;
