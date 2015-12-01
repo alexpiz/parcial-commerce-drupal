@@ -153,27 +153,28 @@ body {
   .toggle-menu {
     display: none; } }
 
-.toggle-menu .navbar-first {
+.navbar-first {
   background-color: #2a9d8a;
   position: fixed;
   width: 100%;
   top: 0; }
-  .toggle-menu .navbar-first a {
+  .navbar-first a {
     color: white;
     text-decoration: none;
     font-size: 24px;
     font-size: 2.4rem; }
-
-.toggle-menu h1 {
-  display: inline-block;
-  width: 30%; }
-
-.toggle-menu input {
-  display: none; }
+  .navbar-first h1 {
+    display: inline-block;
+    width: 30%; }
+  .navbar-first input {
+    display: none; }
+  @media (min-width: 640px) {
+    .navbar-first {
+      position: absolute; } }
 
 .main-nav {
   background-color: #2a2a2a;
-  height: auto;
+  height: 300px;
   position: fixed;
   width: 100%;
   top: 110px; }
@@ -188,9 +189,33 @@ body {
   @media (min-width: 640px) {
     .main-nav {
       position: absolute;
-      width: 100%; }
+      width: 100%;
+      top: 45px; }
       .main-nav li {
         display: inline-block; } }
+
+li.list-item {
+  list-style-type: normal;
+  padding: 5px 0px;
+  text-align: center;
+  text-decoration: none;
+  max-width: 100%;
+  margin: 0;
+  top: 0;
+  margin-left: 5%; }
+
+li.expanded:hover ul.categories {
+  display: block; }
+
+ul.categories {
+  display: none;
+  height: auto;
+  position: absolute;
+  background: #2a9d8a;
+  width: 135px;
+  z-index: 3; }
+  ul.categories li {
+    position: relative; }
 
 button {
   font-size: 20px;
@@ -207,19 +232,18 @@ button {
   text-align: center;
   height: 4rem;
   font-size: 25px;
-  font-size: 2.5rem;
-  border-radius: 11px; }
+  font-size: 2.5rem; }
 
 .category {
-  float: right;
-  padding: 1% 9%;
-  border-left: 1px solid #000;
-  font-size: 1.5rem;
-  font-size: 15px; }
+  display: block;
+  width: 400px; }
 
 .about-main-product h2 {
   font-size: 20px;
   font-size: 2rem; }
+
+.video {
+  text-align: center; }
 
 footer {
   background: #2a2a2a;
