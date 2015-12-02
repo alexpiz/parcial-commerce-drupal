@@ -14,6 +14,9 @@ body {
 .container {
   @include span-columns(12);
 }
+.navbar-first {
+  @include span-columns(12);
+}
 
 .main-nav {
   @include span-columns(12);
@@ -21,7 +24,6 @@ body {
 
 .product-main-image {
   @include span-columns(12);
-  background-color: $second-color;
 }
 
 .about-main-product {
@@ -38,14 +40,21 @@ body {
   text-align:center;
 }
 
+.video {
+  @include span-columns(12);
+}
+
 .related-products-camisa {
   @include span-columns(6);
 }
 
 .product-images-item {
   //display: none;
-  width: 400px;
-  height: 600px;
+  text-align: center;
+}
+
+.product-info-item-precio {
+  @include span-columns(6);
 }
 
 .product-description,
@@ -76,6 +85,13 @@ body {
 .fa-star {
   color: #2a9d8a;
   font-size: 1.5rem;
+}
+
+iframe {
+  @media (max-width: $mobile-width){
+  height: 200px;
+  width: 300px;
+  }
 }
 
 

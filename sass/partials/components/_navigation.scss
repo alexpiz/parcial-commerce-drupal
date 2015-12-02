@@ -13,8 +13,8 @@
 .navbar-first {
   background-color: #2a9d8a;
   position: fixed;
-  width: 100%;
   top: 0;
+  width: 100%;
   a {
     color: white;
     text-decoration: none;
@@ -22,13 +22,19 @@
     }
   h1 {
     display: inline-block;
-    width: 30%;
+    width: 150px;
   }
   input {
     display: none;
   }
 @media (min-width: $mobile-width){
     position: absolute;
+      input {
+      display: block;
+    }
+    h1 {
+    width: 261px;
+  }
   }
 }
 
@@ -40,7 +46,7 @@
   background-color: #2a2a2a;
   position: fixed;
   width: 100%;
-  top: 110px;
+  top: 78px;
   li {
     color: white;
     margin: 6% 0;
@@ -64,6 +70,10 @@ li.list-item {
   max-width: 100%;
   margin: 0 10px;
   top: 0;
+  a {
+    color: #fff;
+  }
+
 }
 
 li.expanded {
@@ -75,12 +85,14 @@ li.expanded {
 }
 
 ul.categories {
+  @media (min-width: $mobile-width){
   display: none;
   height: auto;
   position: absolute;
   background: #2a9d8a;
   width: 135px;
   z-index: 3;
+}
   li {
     position: relative;
   }
