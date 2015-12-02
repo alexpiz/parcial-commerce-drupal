@@ -1,5 +1,11 @@
-/***** Neat grid system*****/
 @import url(https://fonts.googleapis.com/css?family=Muli|Cookie|Didact+Gothic);
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+/***** Neat grid system*****/
 /* media query points*/
 /*
  * Rules for base elements
