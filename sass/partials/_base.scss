@@ -7,9 +7,10 @@ html {
 }
 
 body {
-  color: #2a2a2a;
+  color: $dark;
   font-family: $muli;
   margin: 0;
+  padding: 0;
 }
 
 img {
@@ -20,7 +21,7 @@ img {
 
 p, li {
   @include font-size(20);
-  color: #555;
+  color: $second-color;
   line-height: 1.6;
 }
 

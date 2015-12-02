@@ -22,7 +22,7 @@ body {
   @include span-columns(12);
 }
 
-.product-main-image {
+.product-main {
   @include span-columns(12);
 }
 
@@ -67,23 +67,34 @@ body {
   padding: 0;
 }
 
+.related-products-camisa-title {
+  @include font-size(24);
+}
+
 .about-main-product {
   margin-top: 10%;
 }
 
 .product-comment-review-user {
-  background: #2a2a2a;
+  background: $dark;
   margin: 3% 0;
   padding: 4%;
+  color: $primary-color;
   h3 {
     display: inline-block;
     width: 40%;
     word-spacing: 5px;
+    @include font-size(24);
   }
 }
 
+.product-comment-review-user-image {
+  width: 150px;
+  height: 150px;
+}
+
 .fa-star {
-  color: #2a9d8a;
+  color: $primary-color;
   font-size: 1.5rem;
 }
 

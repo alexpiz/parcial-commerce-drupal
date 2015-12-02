@@ -1,10 +1,11 @@
 footer {
-    background: #2a2a2a;
+    background: $dark;
     clear: both;
     padding: 4%;
+    text-align: center;
     h5 {
-        color: #060606;
+        color: $primary-color;
         margin-top: 2%;
-        text-align: left;
+         @include font-size(20);
     }
 }

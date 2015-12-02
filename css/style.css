@@ -10,7 +10,8 @@ html {
 body {
   color: #2a2a2a;
   font-family: "Muli", sans-serif;
-  margin: 0; }
+  margin: 0;
+  padding: 0; }
 
 img {
   width: inherit;
@@ -95,7 +96,7 @@ body {
   margin-left: auto;
   margin-right: auto; }
 
-.product-main-image {
+.product-main {
   max-width: 960px;
   margin-left: auto;
   margin-right: auto; }
@@ -143,17 +144,28 @@ body {
   margin: 0;
   padding: 0; }
 
+.related-products-camisa-title {
+  font-size: 24px;
+  font-size: 2.4rem; }
+
 .about-main-product {
   margin-top: 10%; }
 
 .product-comment-review-user {
   background: #2a2a2a;
   margin: 3% 0;
-  padding: 4%; }
+  padding: 4%;
+  color: #2a9d8a; }
   .product-comment-review-user h3 {
     display: inline-block;
     width: 40%;
-    word-spacing: 5px; }
+    word-spacing: 5px;
+    font-size: 24px;
+    font-size: 2.4rem; }
+
+.product-comment-review-user-image {
+  width: 150px;
+  height: 150px; }
 
 .fa-star {
   color: #2a9d8a;
@@ -164,12 +176,14 @@ body {
     height: 200px;
     width: 300px; } }
 
-.product-main-image {
+.product-main {
   padding-top: 24%; }
 
-@media (min-width: 640px) {
-  .toggle-menu {
-    display: none; } }
+.toggle-menu {
+  float: right; }
+  @media (min-width: 640px) {
+    .toggle-menu {
+      display: none; } }
 
 .navbar-first {
   background-color: #2a9d8a;
@@ -190,7 +204,11 @@ body {
     .navbar-first {
       position: absolute; }
       .navbar-first input {
-        display: block; }
+        display: block;
+        float: right;
+        border-radius: none;
+        border: 2px solid #fff;
+        margin: 1%; }
       .navbar-first h1 {
         width: 261px; } }
 
@@ -242,25 +260,37 @@ ul.categories li {
   position: relative; }
 
 button {
-  font-size: 20px;
-  font-size: 2rem;
+  font-size: 14px;
+  font-size: 1.4rem;
   margin: 3% 0;
-  margin-top: -2px; }
+  margin-top: 2px;
+  border: none;
+  padding: 15px;
+  background: #fff;
+  color: #2a9d8a;
+  border: 2px solid #2a9d8a; }
+  button:hover {
+    background: #2a9d8a;
+    color: #fff; }
 
 /*
  * Price style .
  */
 .product-info-item-precio {
-  background: #4a4a4a;
-  width: 100%;
+  background: #2a9d8a;
+  width: 50%;
   text-align: center;
   height: 4rem;
   font-size: 25px;
-  font-size: 2.5rem; }
+  font-size: 2.5rem;
+  color: #fff; }
+  @media (max-width: 640px) {
+    .product-info-item-precio {
+      width: 100%; } }
 
 .category {
   display: block;
-  width: 400px; }
+  width: auto; }
 
 .about-main-product h2 {
   font-size: 20px;
@@ -272,10 +302,12 @@ button {
 footer {
   background: #2a2a2a;
   clear: both;
-  padding: 4%; }
+  padding: 4%;
+  text-align: center; }
   footer h5 {
-    color: #060606;
+    color: #2a9d8a;
     margin-top: 2%;
-    text-align: left; }
+    font-size: 20px;
+    font-size: 2rem; }
 
 /*# sourceMappingURL=style.css.map */
